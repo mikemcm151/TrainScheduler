@@ -135,7 +135,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   // console.log(moment().format("X"));
 
   // Add each train's data into the table 
-  $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + currentTime + "</td><td>" + nextTrain + "</td><td>" + tMinutesTillTrain + "</td></tr>");
+  $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + diffTime + "</td><td>" + nextTrain + "</td><td>" + tMinutesTillTrain + "</td></tr>");
 
 
 
