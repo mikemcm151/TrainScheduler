@@ -77,7 +77,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
   // Store everything into a variable.
   var trainName = childSnapshot.val().name;
-  var destination = childSnapshot.val().destionation;
+  var destination = childSnapshot.val().destination;
   // var firstTrain = childSnapshot.val().start;
   var frequency = childSnapshot.val().frequency;
   var nextArrival = childSnapshot.val().arrival;
