@@ -92,7 +92,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   console.log(minutesAway);
 
     // Assumptions
-    var tFrequency = 3;
+    var tFrequency = 30;
 
     // Time is 3:30 AM
     var firstTime = "03:30";
@@ -142,8 +142,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
 
 
-  // Prettify the train start
-  // var trainStartPretty = moment.unix(empStart).format("MM/DD/YY");
+
 
   // // Calculate the months worked using hardcore math
   // // To calculate the months worked
