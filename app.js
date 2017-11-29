@@ -77,11 +77,11 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
   // Store everything into a variable.
   var trainName = childSnapshot.val().name;
-  var destionation = childSnapshot.val().role;
+  var destination = childSnapshot.val().destionation;
   // var firstTrain = childSnapshot.val().start;
-  var frequency = childSnapshot.val().rate;
-  var nextArrival = childSnapshot.val().rate;
-  var minutesAway = childSnapshot.val().rate;
+  var frequency = childSnapshot.val().frequency;
+  var nextArrival = childSnapshot.val().arrival;
+  var minutesAway = childSnapshot.val().minutesAway;
 
   // Train Info
   console.log(trainName);
@@ -135,7 +135,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   // console.log(moment().format("X"));
 
   // Add each train's data into the table 
-  $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + tRemainder + "</td><td>" + nextTrain + "</td><td>" + tMinutesTillTrain + "</td></tr>");
+  $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + currentTime + "</td><td>" + nextTrain + "</td><td>" + tMinutesTillTrain + "</td></tr>");
 
 
 
